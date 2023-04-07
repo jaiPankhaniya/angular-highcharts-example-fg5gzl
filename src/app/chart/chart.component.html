@@ -1,0 +1,8 @@
+<div class="popup-container" [hidden]="!showPopup">
+  <div class="popup">
+    <span class="close" (click)="close.emit()">&times;</span>
+    <div class="popup-body">
+      <div #chartContainer class="chart-container"></div>
+    </div>
+  </div>
+</div>

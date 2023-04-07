@@ -1,0 +1,11 @@
+<button (click)="showChart()">Show Chart</button>
+<app-chart
+  *ngIf="showPopup"
+  [data]="chartData"
+  [data1]="chartData1"
+  [data2]="chartData2"
+  [data3]="chartData3"
+  [labels]="chartLabels"
+  [showPopup]="showPopup"
+  (close)="hideChart()"
+></app-chart>
